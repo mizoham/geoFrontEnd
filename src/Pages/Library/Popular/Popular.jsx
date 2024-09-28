@@ -21,7 +21,7 @@ const Popular = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          'http://localhost:3000/api/library',
+          'https://apigeo.onrender.com/library',
         );
         const bookData = res.data.filter(
           (item) => item.category === 'Books',
